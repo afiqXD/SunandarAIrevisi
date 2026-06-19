@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunandar AI - Gemini Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <button class="icon-btn menu-btn"><i class="fa-solid fa-bars"></i></button>
+                <button class="new-chat-btn">
+                    <i class="fa-solid fa-plus"></i> <span>New chat</span>
+                </button>
+                <div class="recent-chats">
+                    <p class="recent-title">Recent</p>
+                    <div class="recent-item"><i class="fa-regular fa-message"></i> Mikrotik DHCP Server</div>
+                    <div class="recent-item"><i class="fa-regular fa-message"></i> Tugas TKJ Python</div>
+                </div>
+            </div>
+            <div class="sidebar-bottom">
+                <button class="nav-item"><i class="fa-regular fa-circle-question"></i> Help</button>
+                <button class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i> Activity</button>
+                <button class="nav-item"><i class="fa-solid fa-gear"></i> Settings</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-nav">
+                <div class="nav-left">
+                    <span class="app-title">Sunandar <span>▼</span></span>
+                </div>
+                <div class="nav-right">
+                    <div class="user-avatar-top">A</div>
+                </div>
+            </header>
+
+            <div class="chat-container" id="chat-box">
+                <div class="welcome-screen" id="welcome-screen">
+                    <h1><span class="gradient-text">Halo, Bos Afiq.</span><br>Ada yang bisa Sunandar bantu?</h1>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-box">
+                    <button class="icon-btn"><i class="fa-solid fa-circle-plus"></i></button>
+                    <input type="text" id="user-input" placeholder="Tanya ke Sunandar..." onkeypress="handleEnter(event)">
+                    <button class="icon-btn send-btn" onclick="kirimPesan()"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+                <p class="disclaimer">Sunandar dapat membuat kesalahan. Harap periksa kembali info penting.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
